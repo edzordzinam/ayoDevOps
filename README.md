@@ -9,10 +9,6 @@
      * tomcat server configs include server.xml and web.xml 
    - logs
      * mount point for tomcat logs
-   - src
-     * decompiled sample.war source files
-   - target 
-     * war application folder 
    - jenkins
      * folder contain docker-compose config for running jenkins on docker
    - Dockerfile 
