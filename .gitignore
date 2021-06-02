@@ -5,3 +5,6 @@ logs/*
 
 jenkins/jenkins_home/*
 !jenkins/jenkins_home/.gitkeep
+
+
+target/*
