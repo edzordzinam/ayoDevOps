@@ -8,7 +8,7 @@ services:
       - "8443:8443"
     container_name: tomcat
     volumes:
-      - ./sample.war:/usr/local/tomcat/webapps/sample.war
+      - ./target/sample.war:/usr/local/tomcat/webapps/sample.war
       - ./logs/:/usr/local/tomcat/logs/
       - ./certs/ssl.crt:/usr/local/tomcat/conf/ssl.crt
       - ./certs/ssl.key:/usr/local/tomcat/conf/ssl.key
