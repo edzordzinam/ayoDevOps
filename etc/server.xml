@@ -72,13 +72,15 @@
                    relaxedPathChars='[]|'
                    relaxedQueryChars='[]:|{}^&#x5c;&#x60;&quot;&lt;&gt;' />
 
-        <Connector port="8443"
+        <Connector server="Apache"
+                   port="8443"
                    maxThreads="150"
                    enableLookups="false"
                    disableUploadTimeout="true"
                    acceptCount="100"
                    scheme="https"
                    secure="true"
+                   protocol="org.apache.coyote.http11.Http11NioProtocol"
                    SSLEnabled="true"
                    SSLCertificateFile="${catalina.base}/conf/ssl.crt"
                    SSLCertificateKeyFile="${catalina.base}/conf/ssl.key" />
