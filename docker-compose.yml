@@ -2,7 +2,7 @@ version: '2'
 
 services:
   tomcat:
-    image: ayo-test-webapp
+    image: ayo-test-webapp-maven
     ports:
       - "8888:8080"
       - "8443:8443"
