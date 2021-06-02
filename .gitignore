@@ -1,0 +1,7 @@
+.idea
+logs/*
+
+!logs/.gitkeep
+
+jenkins/jenkins_home/*
+!jenkins/jenkins_home/.gitkeep
