@@ -2,17 +2,13 @@ version: '2'
 
 services:
   tomcat:
-    image: tomcat:8.5-jre8
+    image: ayo-test-webapp
     ports:
       - "8888:8080"
       - "8443:8443"
-    container_name: tomcat
+    container_name: ayo-test-webapp-maven
     volumes:
-      - ./target/sample.war:/usr/local/tomcat/webapps/sample.war
       - ./logs/:/usr/local/tomcat/logs/
-      - ./certs/ssl.crt:/usr/local/tomcat/conf/ssl.crt
-      - ./certs/ssl.key:/usr/local/tomcat/conf/ssl.key
-      - ./etc/server.xml:/usr/local/tomcat/conf/server.xml
     environment:
       - TOMCAT_USER_ID=1000
       - TOMCAT_GROUP_ID=1000
