@@ -12,4 +12,6 @@ Technical Assessment Project
 docker-compose.yml 
 
 Update readme to check if build would be triggered
+Update readme to check if build would be triggered
+
     
